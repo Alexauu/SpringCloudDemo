@@ -8,8 +8,8 @@ spring:
       label: master
       server:
         git:
-          uri: https://github.com/Alexauu/SpringCloudDemo
-          searchPaths: config
+          uri: https://github.com/Alexauu/SpringCloudConfig
+          searchPaths: respo
 
 eureka:
   client:
