@@ -11,3 +11,17 @@ spring:
     mode: HTML5
     servlet:
       content-type: text/html
+
+feign.hystrix.enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+  endpoint:
+    health:
+      show-details: always

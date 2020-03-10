@@ -28,6 +28,14 @@ import cn.hutool.core.util.NumberUtil;
 public class ProductViewServiceApplication {
 
     public static void main(String[] args) {
+
+        //判断 rabbitMQ 是否启动
+        int rabbitMQPort = 5672;
+        if(NetUtil.isUsableLocalPort(rabbitMQPort)) {
+            System.err.printf("未在端口%d 发现 rabbitMQ服务，请检查rabbitMQ 是否启动", rabbitMQPort );
+            System.exit(1);
+        }
+
         int port = 0;
         int defaultPort = 8010;
         Future<Integer> future = ThreadUtil.execAsync(() ->{

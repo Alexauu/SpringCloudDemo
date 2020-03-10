@@ -20,6 +20,7 @@ import org.springframework.context.annotation.Bean;
 @EnableEurekaClient
 public class ProductDataServiceApplication {
     public static void main(String[] args) {
+
         int port = 0;
         int defaultPort = 8001;
         Future<Integer> future = ThreadUtil.execAsync(() ->{
