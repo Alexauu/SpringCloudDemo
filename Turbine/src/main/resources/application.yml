@@ -3,7 +3,7 @@ spring:
 turbine:
   aggregator:
     clusterConfig: default
-  appConfig: ProductViewService ### 配置Eureka中的serviceId列表，表明监控哪些服务
+  appConfig: product-view-service ### 配置Eureka中的serviceId列表，表明监控哪些服务
   clusterNameExpression: new String("default")
 eureka:
   client:

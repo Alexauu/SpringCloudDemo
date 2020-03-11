@@ -14,6 +14,7 @@
         <module>ConfigServer</module>
         <module>HystrixDashboard</module>
         <module>Turbine</module>
+        <module>Zuul</module>
     </modules>
     <packaging>pom</packaging>
 

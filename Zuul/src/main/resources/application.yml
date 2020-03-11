@@ -1,0 +1,9 @@
+
+zuul:
+  routes:
+    api-a:
+      path: /api-data/**
+      serviceId: PRODUCT-DATA-SERVICE
+    api-b:
+      path: /api-view/**
+      serviceId: PRODUCT-VIEW-SERVICE

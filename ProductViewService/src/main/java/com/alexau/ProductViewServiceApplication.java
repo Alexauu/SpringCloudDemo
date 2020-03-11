@@ -7,10 +7,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import brave.sampler.Sampler;
-import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -78,9 +76,6 @@ public class ProductViewServiceApplication {
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
     }
-
-
-
 
 //    @Bean
 //    @LoadBalanced
