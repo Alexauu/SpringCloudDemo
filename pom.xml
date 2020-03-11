@@ -12,6 +12,8 @@
         <module>ProductViewService</module>
         <module>ProductDataService</module>
         <module>ConfigServer</module>
+        <module>HystrixDashboard</module>
+        <module>Turbine</module>
     </modules>
     <packaging>pom</packaging>
 

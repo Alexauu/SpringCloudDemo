@@ -59,4 +59,5 @@ public class ProductDataServiceApplication {
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
     }
+
 }

@@ -11,6 +11,15 @@ spring:
           uri: https://github.com/Alexauu/SpringCloudConfig
           searchPaths: respo
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
 eureka:
   client:
     serviceUrl:

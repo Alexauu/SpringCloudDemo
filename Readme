@@ -1,3 +1,9 @@
 服务链路追踪：
 运行java -jar zipkin-server-2.10.1-exec.jar --zipkin.collector.rabbitmq.addresses=localhost,
 访问http://localhost:9411/zipkin/dependency/
+
+
+微服务注册中心：http://127.0.0.1:8761/
+
+断路器监控：http://localhost:8020/hystrix
+     输入：http://localhost:8012/actuator/hystrix.stream
