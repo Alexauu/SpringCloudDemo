@@ -6,4 +6,6 @@
 微服务注册中心：http://127.0.0.1:8761/
 
 断路器监控：http://localhost:8020/hystrix
-     输入：http://localhost:8012/actuator/hystrix.stream
+     输入：http://localhost:8012/actuator/hystrix.stream（view端口）
+     聚合监控：http://localhost:8021/turbine.stream
+
